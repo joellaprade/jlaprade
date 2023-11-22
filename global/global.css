@@ -111,6 +111,24 @@ nav .wrapper {
     border-color: white;
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px var(--mediumMargin);
+
+    border: calc(10 * var(--shrink40)) solid black;
+}
+
+menu .x {
+    
+}
+
+
+
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -192,12 +210,6 @@ footer .copy a, b{
 
 
 
-
-/* DESKTOP ONLY */
-
-@media screen and (width >= 960px){
-
-}
 
 /* MOBILE ONLY */
 

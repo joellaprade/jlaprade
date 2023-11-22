@@ -16,4 +16,16 @@ document.querySelector('nav').innerHTML +=
         Menu
     </button>
 </div>
+<div class="menu">
+            <img src="/assets/x.png" alt="">
+            <p>inicio<div class="indicator"></div></p>
+            <p>Proyectos</p>
+            <p>Productos</p>
+            <p>Contacto</p>
+            <a href="wa.me/50687083439">
+                <button>
+                    Cotizar
+                </button>
+            </a>
+        </div>
 `
