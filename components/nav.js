@@ -5,7 +5,7 @@ document.querySelector('nav').innerHTML +=
     <img src="/assets/logo.png" class="logo">
     <div class="link-container">
         <a href="" class="link">Inicio</a>
-        <a href="" class="link">Proyectos</a>
+        <a href="/proyects/proyects.html" class="link">Proyectos</a>
         <a href="" class="link">Productos</a>
         <a href="" class="link">Contacto</a>
         <a href="">
