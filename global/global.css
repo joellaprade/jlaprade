@@ -125,6 +125,10 @@ nav > .wrapper {
 
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,77,197,1) 24%, rgba(0,0,0,1) 100%);
     border: calc(10 * var(--shrink40)) solid black;
+
+    box-sizing: border-box;
+
+    transition: translate 0.5s ease-in-out;
 }
 
 .menu .indicator-wrapper {
@@ -172,7 +176,7 @@ nav > .wrapper {
     color: white;
     font-size: var(--f32Px);
     font-weight: 400;
-    border: calc(2 * var(--shrink40)) solid white;
+    border: 2px solid white;
 }
 
 
