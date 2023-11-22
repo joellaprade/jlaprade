@@ -170,16 +170,12 @@ nav > .wrapper {
     margin: var(--mediumMargin);
 }
 
-.menu  p {
+.menu  a {
     margin: var(--mediumMargin) 0px;
 
     font-size: var(--f32Px);
     font-weight: 400;
     color: white;
-}
-
-.menu  a {
-    margin: var(--mediumMargin) 0px;
 }
 
 .menu  a > button {
