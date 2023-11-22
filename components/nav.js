@@ -4,9 +4,9 @@ document.querySelector('nav').innerHTML +=
 <div class="wrapper">
     <img src="/assets/logo.png" class="logo">
     <div class="link-container">
-        <a href="" class="link">Inicio</a>
+        <a href="/index.html" class="link">Inicio</a>
         <a href="/proyects/proyects.html" class="link">Proyectos</a>
-        <a href="" class="link">Productos</a>
+        <a href="/products/products.html" class="link">Productos</a>
         <a href="" class="link">Contacto</a>
         <a href="">
             <button>Cotizar</button>
