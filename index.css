@@ -1,0 +1,370 @@
+/*GLOBAL CHANGE*/
+
+.link-container > * {
+    margin-left: calc(50 * var(--shrink40));
+    color: var(--dark);;
+}
+
+.link-container button {
+    color: black;
+    border-color: black;
+}
+
+nav .background {
+    display: none;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: calc(var(--extraLargeMargin) * 2);
+
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.hero > .container-0 {
+    width: 55%;
+    height: 100%;
+    padding: 8vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero > .container-0 > .gradient-orbs {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.hero > .container-1 {
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.hero-elipse {
+    position: absolute;
+    right: 0px;
+
+    z-index: -1;
+}
+
+.hero .copy {
+    margin: 0px 8vw;
+}
+
+.hero .copy p {
+    margin-top: var(--smallMargin);
+}
+
+.hero .copy button {
+    margin-top: var(--largeMargin);
+
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+.benefits {
+    width: 100%;
+    height: 100vh;
+    padding: 1px;
+
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.benefits .container {
+    width: 84%;
+    height: 84%;
+    margin: 8vh 8vw;
+
+    position: relative;
+
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    background-color: #cdd9ff00;
+    
+    box-sizing: border-box;
+    border: 10px solid black;
+    border-radius: 50px;
+}.benefits .container::-webkit-scrollbar {display: none;}
+
+
+.benefits .backgrounds {
+    width: 84%;
+    height: 84%;
+    margin: 8vh 8vw;
+    transform: scale(0.99);
+
+    position: absolute;
+    
+    z-index: -2;
+    border-radius: 50px;
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.benefits .backgrounds div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.blue {
+    background-color: #CDD9FF;
+    opacity: 1 !important;
+}
+
+.pink {
+    background-color: #FFB5E7;
+}
+
+.orange {
+    background-color: #FFBB93;
+}
+
+.gray {
+    background-color: #181818;
+}
+
+.benefits img {
+    padding: 8vh;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 961px){
+    .benefit-3 img {
+        max-height: 75%;
+    }
+}
+
+.benefits .container-1 {
+    box-sizing: border-box;
+}
+
+.benefits .copy {
+    margin: 0px 8vw;
+}
+
+.benefits .copy p {
+    margin-top: var(--smallMargin);
+}
+
+.benefits .copy > * {
+    color: black !important;
+}
+
+.benefit-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.benefit-4 h1 {
+    margin: 0px 8vw;
+    text-align: center;
+}
+
+.benefit-4 > div {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: calc(var(--largeMargin) * 2);
+}
+
+.benefit-4 .digital {
+    background-image: linear-gradient(90deg, rgba(79,120,255,1) 5%, rgba(255,138,69,1) 50%, rgba(255,77,197,1) 95%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: var(--f90Px);
+    font-weight: 600; 
+}
+
+.benefit-4 .base {
+    font-size: var(--f90Px);
+    font-weight: 600; 
+}
+
+.benefit-4 > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-4 span > span {
+    position: absolute;
+}
+
+.benefit-4 > div > button {
+    margin: 0px var(--smallMargin);
+
+    color: white;
+    border-color: white;
+}
+
+.benefits > .container > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.benefits > .container > div > .container-0, .container-1 {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 960px){
+
+    body .hero {
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    body .hero > .container-0 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        height: 40%;
+        width: 100%;
+    }
+
+    body .hero > .container-0 > img {
+        height: 100%;
+
+        object-fit: contain;
+    }   
+
+    body .hero > .container-1 {
+        width: 100%;
+        height: 60%;
+
+        overflow-x: hidden;
+    }
+
+    body .hero-elipse {
+        right: 50%;
+        bottom: 0px;
+        translate: 50% 0;
+
+    }
+
+    body .hero .copy {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0px auto !important;
+
+        text-align: center;
+    }
+    body h1 {
+        margin-top: calc(var(--extraLargeMargin));
+        text-align: center;
+    }
+
+    body .benefits {
+        align-items: center;
+    }
+
+    body .benefits .container {
+        height: 80vh !important;
+    }
+
+    body .benefits .backgrounds {
+        height: 80vh !important;
+    }
+
+    body .benefits > .container > div {
+        flex-direction: column;
+
+    }
+
+    body .benefits > .container > div:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    body .benefits > .container > div > .container-0, .container-1 {
+        width: 100%;
+        height: 50%;
+        justify-content: center; /*tenia !important*/
+    }
+
+    body .benefits .copy {
+        width: 70%;
+
+        text-align: center;
+    }
+
+    body .benefits > .container > div:nth-child(odd) > div:nth-child(odd) {
+        align-items: end ;
+    }
+
+    body .benefits > .container > div:nth-child(even) > div:nth-child(even) {
+        align-items: end ;
+    }
+
+    body .benefits > .container > div:nth-child(odd) > div:nth-child(even) {
+        align-items: start ;
+    }
+
+    body .benefits > .container > div:nth-child(even) > div:nth-child(odd) {
+        align-items: start;
+    }
+
+    body .benefit-4 h1 {
+        margin-top: 0px;
+    }
+}
+
+/*
+tenemos container
+dentro de container estan benefits#
+cada benefit par está alrevez
+al container le podemos aplicar column reverse con nth child
+
+*/

@@ -1,0 +1,170 @@
+
+
+section {
+    height: 100%;
+    padding-top: 175px;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dynamic {
+    margin-top: var(--extraLargeMargin);
+}
+
+h1 {
+    color: black;
+    font-weight: 500;
+}
+
+.line {
+    height: calc(10 * var(--shrink40));
+    width: 100px;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.name {
+    margin: var(--mediumMargin) 0px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+
+    margin: var(--mediumMargin) 0px;
+}
+
+.body > div {
+    position: relative;
+    }
+
+.benefit {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+.benefit > div:nth-child(1){
+    margin-bottom: var(--smallMargin);
+}
+
+.benefit > div > img {
+    width: calc(80 * var(--shrink40)) !important;
+}
+
+.benefit > div > p {
+    text-indent: 10%;
+}
+
+.ilustration {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustration > img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+.benefits-1 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.benefits-1 > div > p {
+    text-align: end;
+}
+
+/* HIDDEN */
+
+.mobile {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    margin: calc(var(--mediumMargin) + var(--smallMargin)) 0px;
+    width: 100%;
+}
+
+.slider .wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.frame {
+    height: calc(500 * var(--shrink40));
+}
+
+.frame-gradient {
+    position: absolute;
+
+    width: 100%;
+    height: calc(200 * var(--shrink40));
+    z-index: -1;
+}
+
+.slider .copy{
+    width: 100%;
+}
+
+@media screen and (max-width: 960px){
+
+    p {
+        text-indent: 0% !important;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .benefits-2 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-2 > div > img {
+        margin: var(--mediumMargin) 0px var(--smallMargin) 0px;
+
+    }
+
+    .ilustration {
+        width: 60%;
+    }
+
+    .name{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* HIDDEN   */
+    .desktop {
+        display: none;
+    }
+}

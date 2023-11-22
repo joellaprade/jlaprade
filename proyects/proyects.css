@@ -1,0 +1,271 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+
+    height: 100vh;
+    width: 100%;
+}
+
+section .container {
+    display: grid;
+    position: relative;
+    margin: var(--smallMargin) 0px;
+
+    width: calc(700 * var(--shrink60));
+    height: calc(450 * var(--shrink60));
+}
+
+h1 {
+    margin: calc(var(--extraLargeMargin) + var(--largeMargin)) 0px var(--mediumMargin) 0px;
+    color: black;
+    font-weight: 500;
+}
+
+.line {
+       background-color: black;
+       border-radius: 100px;
+       height: 5px;
+       width: 100px;
+}
+
+section .container > img:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    justify-self: start;
+    align-self: start;
+
+    height: 76%;
+    width: 90%;
+    object-fit: cover;
+    
+    border: solid calc(10 * var(--shrink40)) black;
+    border-radius: calc(15 * var(--shrink40));
+    box-sizing: border-box;
+}
+
+section .container > img:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    justify-self: start;
+    align-self: end;
+
+    height: 25%;
+    width: 90%;
+}
+
+section .container > img:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    justify-self: end;
+    align-self: end;
+
+    height: 76%;
+    width: 27%;
+    object-fit: cover;
+
+    border: solid calc(10 * var(--shrink40)) black;
+    border-radius: calc(15 * var(--shrink40));
+    box-sizing: border-box;
+}
+
+section .container > div > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section a {
+    margin: var(--mediumMargin) 0px;;
+}
+
+.slider{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}.slider::-webkit-scrollbar {display: none;}
+
+.scrollable {
+    width: 10000px;
+    display: flex;
+}
+
+.slider > .scrollable > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(250 * var(--shrink40));
+    height: calc(100 * var(--shrink40));
+    margin: 0px var(--largeMargin) 0px 0px;
+    padding: calc(var(--smallMargin) / 2);
+
+    border: 5px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.scrollable > div > img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}
+
+.scrollable > div > a {
+    text-align: center;
+}
+
+section .wrapper {
+    position: relative;
+    margin: var(--largeMargin) 0px 0px 0px;
+
+}
+
+section .wrapper .gradient {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    width: 200px;
+    height: 100%;
+}
+
+section .wrapper .arrow {
+    z-index: 1;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    transition: 0.5s transform ease-in-out;
+
+    height: 100%;
+}
+
+.rotate {
+    transform: rotate(180deg);
+
+}
+
+.gradient-orbs {
+    position: absolute !important;
+    align-self: center;
+    justify-self: center;
+    z-index: -1;
+    width: 200%;
+}
+
+
+/* HIDDEN */
+
+.desktop {
+    display: none;
+}
+
+body .filler {
+    display: none;
+    border: none !important;
+    width: calc(100 * var(--shrink60)) !important;
+}
+
+@media screen and (min-width: 960px) {
+    
+    body section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 8vw;
+
+        box-sizing: border-box;
+    }
+
+    body .desktop{
+        display: flex;
+        flex-direction: column;
+        
+        margin: var(--mediumMargin) 0px;
+
+        width: 50%;
+        
+    }
+
+    body section > .desktop {
+        margin: calc(var(--mediumMargin) + var(--smallMargin)) 0px 0px 0px;
+
+    }
+
+    body > section > .desktop > a.desktop {
+        margin: var(--mediumMargin) 0px;
+        width: 100px;
+    } 
+
+    body h1{
+        margin: 0px;
+
+    }
+
+    body section .container {
+        margin: var(--largeMargin) 0px 0px 0px;
+    }
+
+    /*HIDDEN*/
+    
+    .mobile {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+
+    body section {
+        height: auto !important;
+    }
+    
+    body section .wrapper{
+        width: 100%;
+        margin: var(--largeMargin) 0px 0px 0px;
+}
+
+    body .filler {
+        display: flex;
+    }
+
+    body .container {
+        margin: var(--largeMargin) 0px;
+    }
+
+    body .gradient {
+        display: none;
+    }
+
+    body .arrow {
+        display: none;
+    }
+
+    body .desktop .scrollable {
+        display: none;
+    }
+
+}
