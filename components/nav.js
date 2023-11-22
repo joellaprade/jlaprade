@@ -17,6 +17,27 @@ document.querySelector('nav').innerHTML +=
     </button>
 </div>
 
+<div class="menu-wrapper">
+            <div class="menu">
+                <div class="wrapper">
+                    <img class="x" src="/assets/x.png" alt="">
+                </div>
+                
+                <div class="indicator-wrapper">
+                    <a href="/index.html">Inicio</a>
+                    <div class="indicator"></div>
+                </div>
+                <a href="/proyects/proyects.html">Proyectos</a>
+                <a href="/products/products.html">Productos</a>
+                <a href="#footer">Contacto</a>
+                <a href="wa.me/50687083439">
+                    <button>
+                        Cotizar
+                    </button>
+                </a>
+            </div>
+        </div>
+
 `
 
 /*
