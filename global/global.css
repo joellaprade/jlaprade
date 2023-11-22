@@ -134,7 +134,7 @@ nav > .wrapper {
 .menu .indicator {
     position: absolute;
     
-    height: calc(3 * var(--shrink40));
+    height: calc(5 * var(--shrink40));
     width: calc(50  * var(--shrink40));
     
     translate: 32.5% calc(-50 * var(--shrink40));
@@ -172,7 +172,7 @@ nav > .wrapper {
     color: white;
     font-size: var(--f32Px);
     font-weight: 400;
-    border: calc(5 * var(--shrink40)) solid white;
+    border: calc(2 * var(--shrink40)) solid white;
 }
 
 
