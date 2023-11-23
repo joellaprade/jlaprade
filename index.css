@@ -256,6 +256,19 @@ nav .background {
 
 
 
+
+
+/* ICONS */
+
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    align-self: center !important;
+    justify-self: center !important;
+}
+
+
+
 /* MOBILE */
 
 @media screen and (max-width: 960px){
@@ -361,11 +374,3 @@ nav .background {
         margin-top: 0px;
     }
 }
-
-/*
-tenemos container
-dentro de container estan benefits#
-cada benefit par está alrevez
-al container le podemos aplicar column reverse con nth child
-
-*/

@@ -51,3 +51,14 @@ container.addEventListener("scroll", () => {
 })
 
 document.querySelector('#footer').style.display = "none";
+
+
+
+
+
+
+
+
+var arrowIcon = document.querySelector('.arrow')
+var benefit0 = document.querySelector('.benefit-0')
+

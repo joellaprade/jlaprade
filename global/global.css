@@ -248,10 +248,28 @@ footer .copy a, b{
 
 
 
+
+/* GLOBAL ICONS */
+
+.arrow {
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+
+
+
 /* GLOBAL CLASSES */
 
 .secondary{
     color: #A4A4A4;
+}
+
+.hidden {
+    display: none;
 }
 
 
