@@ -22,6 +22,13 @@ h1 {
     margin: calc(var(--extraLargeMargin) + var(--largeMargin)) 0px var(--mediumMargin) 0px;
     color: black;
     font-weight: 500;
+    width: auto !important;
+}
+
+.copy-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .line {
@@ -153,10 +160,11 @@ section .wrapper .arrow {
     transition: 0.5s transform ease-in-out;
 
     height: 100%;
+    transform: rotate(-90deg);
 }
 
 .rotate {
-    transform: rotate(180deg);
+    transform: rotate(90deg) !important;
 
 }
 
@@ -172,6 +180,10 @@ section .wrapper .arrow {
 /* HIDDEN */
 
 .desktop {
+    display: none;
+}
+
+.disappear-mobile {
     display: none;
 }
 
@@ -196,7 +208,7 @@ body .filler {
         display: flex;
         flex-direction: column;
         
-        margin: var(--mediumMargin) 0px;
+        margin: calc(var(--mediumMargin) * 2) 0px 0px 0px;
 
         width: 50%;
         
@@ -204,7 +216,7 @@ body .filler {
 
     body section > .desktop {
         margin: calc(var(--mediumMargin) + var(--smallMargin)) 0px 0px 0px;
-
+        position: relative;
     }
 
     body > section > .desktop > a.desktop {
@@ -219,6 +231,11 @@ body .filler {
 
     body section .container {
         margin: var(--largeMargin) 0px 0px 0px;
+    }
+
+    a.desktop {
+        margin: var(--smallMargin) 0px calc(var(--mediumMargin) * 2) 0px !important;
+        width: 40%  !important;
     }
 
     /*HIDDEN*/
