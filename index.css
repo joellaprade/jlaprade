@@ -269,6 +269,7 @@ nav .background {
         display: flex;
         justify-content: center;
         position: relative;
+        padding: 8vw 16vw;
 
         height: 40%;
         width: 100%;
