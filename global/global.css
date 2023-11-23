@@ -272,6 +272,10 @@ footer .copy a, b{
     display: none;
 }
 
+.transparent {
+    opacity: 0;
+}
+
 
 
 

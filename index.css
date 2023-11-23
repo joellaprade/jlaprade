@@ -265,6 +265,17 @@ nav .background {
     bottom: 10px;
     align-self: center !important;
     justify-self: center !important;
+
+    transition: opacity 0.3s ease-out;
+}
+
+.arrow-wrapper  {
+    position: absolute;
+    width: 100%;
+    height: 100px !important;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
 }
 
 

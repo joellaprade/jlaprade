@@ -3,7 +3,6 @@ var benefits = [].slice.call(container.children)
 var visibleArea;
 
 const checkBenefitsEnd = (element, relativeTop) => {
-    console.log(relativeTop)
     if(element == benefits[4] && relativeTop < 1){
         document.querySelector('#footer').style.display = "flex";
     }else {
@@ -62,3 +61,20 @@ document.querySelector('#footer').style.display = "none";
 var arrowIcon = document.querySelector('.arrow')
 var benefit0 = document.querySelector('.benefit-0')
 
+const arrowOptions = {
+    threshold: 1
+}
+
+const arrowObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            arrowIcon.classList.remove('transparent')
+            console.log('isIntersection')
+        }else {
+            arrowIcon.classList.add('transparent')
+            console.log('NotisIntersection')
+        }
+    })
+}, arrowOptions)
+
+arrowObserver.observe(benefit0)
