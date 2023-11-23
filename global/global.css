@@ -219,18 +219,21 @@ footer .copy {
 footer .navegate {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 
     margin-left: 25vw;
+    margin-top: 10vh;
+
 }
 
 footer .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: end;
 
     margin-right: 25vw;
+    margin-top: 10vh;
 }
 
 footer .copy b {
