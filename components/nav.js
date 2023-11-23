@@ -2,7 +2,9 @@ document.querySelector('nav').innerHTML +=
 `
 <img src="/assets/nav-background.png" class="background">
 <div class="wrapper">
-    <img src="/assets/logo.png" class="logo">
+    <a href="/index.html">
+        <img src="/assets/logo.png" class="logo">
+    </a>
     <div class="link-container">
         <a href="/index.html" class="link">Inicio</a>
         <a href="/proyects/proyects.html" class="link">Proyectos</a>
