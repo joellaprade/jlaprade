@@ -19,3 +19,10 @@ menuButton.addEventListener('click', () => {
 xButton.addEventListener('click', () => {
     hideMenu();
 })
+
+var desktopLinks = document.querySelector(".link-container").children
+var mobileLinks = document.querySelector(".menu").children
+const setIndicator = (index) => {
+    desktopLinks[index].classList.add('underline-indicator')
+    mobileLinks[index + 1].classList.add('underline-indicator')
+}

@@ -24,11 +24,8 @@ document.querySelector('nav').innerHTML +=
                 <div class="wrapper">
                     <img class="x" src="/assets/x.png" alt="">
                 </div>
-                
-                <div class="indicator-wrapper">
-                    <a href="/index.html">Inicio</a>
-                    <div class="indicator"></div>
-                </div>
+
+                <a href="/index.html">Inicio</a>
                 <a href="/proyects/proyects.html">Proyectos</a>
                 <a href="/products/products.html">Productos</a>
                 <a class="contacto-link" href="#footer">Contacto</a>

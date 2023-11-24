@@ -385,3 +385,13 @@ nav .background {
         margin-top: 0px;
     }
 }
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 960px){
+    .underline-indicator {
+        border-bottom: 4px solid black;
+    }
+}

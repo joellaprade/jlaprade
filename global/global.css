@@ -142,20 +142,8 @@ nav > .wrapper {
 
 }
 
-.menu .indicator-wrapper {
-    position: relative;
-}
-
-.menu .indicator {
-    position: absolute;
-    
-    height: calc(5 * var(--shrink40));
-    width: calc(50  * var(--shrink40));
-    
-    translate: 32.5% calc(-50 * var(--shrink40));
-
-    background-color: white;
-
+.underline-indicator {
+    border-bottom: 4px solid white;
 }
 
 .menu .wrapper {

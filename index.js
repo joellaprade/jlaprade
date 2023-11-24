@@ -97,3 +97,5 @@ const scrollFooter = () => {
 for(let link of document.querySelectorAll('.contacto-link')){
     link.addEventListener('click', scrollFooter)
 }
+
+setIndicator(0);
