@@ -34,6 +34,12 @@ document.querySelector('nav').innerHTML +=
                         Cotizar
                     </button>
                 </a>
+                <div class="menu-backgrounds">
+                    <div class="black-menu"></div>
+                    <div class="blue-menu"></div>
+                    <div class="orange-menu"></div>
+                    <div class="pink-menu"></div>
+                </div>
             </div>
         </div>
 
