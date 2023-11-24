@@ -47,7 +47,7 @@ var fadeToColor = () => {
     if(66.66 < colorRange && colorRange < 100){
         orange.style.opacity = '1';
     }
-    black.style.opacity = '0.50';
+    black.style.opacity = '0.5';
 }
 
 const fadeToBlack = () => {
@@ -63,7 +63,6 @@ const hideColors = () => {
 
 
 const navColorChange = () => {
-    console.log(tracker.loop)
     switch(tracker.loop){
         case 0: 
             fadeToColor();
