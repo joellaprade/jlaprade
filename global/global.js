@@ -26,3 +26,8 @@ const setIndicator = (index) => {
     desktopLinks[index].classList.add('underline-indicator')
     mobileLinks[index + 1].classList.add('underline-indicator')
 }
+
+
+const navColorChange = () => {
+    
+}
