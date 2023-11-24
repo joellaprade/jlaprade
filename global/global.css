@@ -14,6 +14,7 @@
     --extraLargeMargin: calc(180 * var(--shrink40));
 
     --dark: #181818;
+    scroll-behavior: smooth;
 }
 
 * {

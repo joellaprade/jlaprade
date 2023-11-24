@@ -9,8 +9,8 @@ document.querySelector('nav').innerHTML +=
         <a href="/index.html" class="link">Inicio</a>
         <a href="/proyects/proyects.html" class="link">Proyectos</a>
         <a href="/products/products.html" class="link">Productos</a>
-        <a href="" class="link">Contacto</a>
-        <a href="">
+        <a href="#footer" class="link contacto-link">Contacto</a>
+        <a href="https://wa.me/50687083439">
             <button>Cotizar</button>
         </a>
     </div>
@@ -31,8 +31,8 @@ document.querySelector('nav').innerHTML +=
                 </div>
                 <a href="/proyects/proyects.html">Proyectos</a>
                 <a href="/products/products.html">Productos</a>
-                <a href="#footer">Contacto</a>
-                <a href="wa.me/50687083439">
+                <a class="contacto-link" href="#footer">Contacto</a>
+                <a href="https://wa.me/50687083439">
                     <button>
                         Cotizar
                     </button>

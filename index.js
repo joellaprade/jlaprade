@@ -69,12 +69,31 @@ const arrowObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             arrowIcon.classList.remove('transparent')
-            console.log('isIntersection')
         }else {
             arrowIcon.classList.add('transparent')
-            console.log('NotisIntersection')
         }
     })
 }, arrowOptions)
 
 arrowObserver.observe(benefit0)
+
+
+
+const scrollFooter = () => {
+    var container = document.querySelector(".container")
+    console.log('ran')
+
+    window.scrollTo({ top: 2000, behavior: "smooth" })
+
+    setTimeout(() => {
+        container.scrollTo({ top: 10000, behavior: "smooth" })
+    }, 400)
+
+    setTimeout(() => {
+        window.scrollTo({ top: 3000, behavior: "smooth" })
+    }, 1200)
+}
+
+for(let link of document.querySelectorAll('.contacto-link')){
+    link.addEventListener('click', scrollFooter)
+}

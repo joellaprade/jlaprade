@@ -84,6 +84,10 @@ h1 {
     text-align: end;
 }
 
+.extras {
+    margin-top: var(--extraLargeMargin);
+}
+
 /* HIDDEN */
 
 .mobile {
@@ -96,11 +100,16 @@ h1 {
     width: 100%;
 }
 
+/* HACER GRADIENT, ARROW Y FUNCIONALIDAD PARA SLIDER */
+
 .slider .wrapper {
     width: 100%;
     overflow-x: scroll;
     position: relative;
-}
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}.slider .wrapper::-webkit-scrollbar {display: none;}
 
 .frame {
     height: calc(500 * var(--shrink40));
