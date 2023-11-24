@@ -47,7 +47,7 @@ var fadeToColor = () => {
     if(66.66 < colorRange && colorRange < 100){
         orange.style.opacity = '1';
     }
-    black.style.opacity = '0';
+    black.style.opacity = '0.50';
 }
 
 const fadeToBlack = () => {
