@@ -115,7 +115,8 @@ nav .background {
     box-sizing: border-box;
     border: 10px solid black;
     border-radius: 50px;
-}.benefits .container::-webkit-scrollbar {display: none;}
+}
+.benefits .container::-webkit-scrollbar {display: none;}
 
 
 .benefits .backgrounds {

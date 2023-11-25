@@ -1,5 +1,6 @@
 const arrow = document.querySelector('.arrow')
 var goBack = false;
+var gradientBackground = 'linear-gradient(90deg, rgba(79,120,255,0.3) 0%, rgba(255,77,197,0.3) 50%, rgba(255,138,69,0.3) 100%)';
 
 var isMobile = window.innerWidth > 960 ? false : true;
 
@@ -22,7 +23,14 @@ var data = [
     }
 ]
 
-const writeData = (id) => {
+const buttonSelector = (buttonElement) => {
+    var scrollable = [].slice.call((isMobile ? document.querySelector('.scrollable-mobile') : document.querySelector('.scrollable-desktop')).children)
+    
+    scrollable.forEach(button => button.style.background = 'white')
+    buttonElement.style.background = gradientBackground;
+}
+
+const writeData = (id, buttonElement) => {
     var pc = document.querySelector('.website');
     var phone = document.querySelector('.website-mobile');
     var name = isMobile ? document.querySelector('h1.mobile') : document.querySelector('h1.desktop')
@@ -41,14 +49,15 @@ const writeData = (id) => {
             link.href = business.webLink;
         }
     })
+    buttonSelector(buttonElement)
 }
 
 const setButtonListeners = () => {
     var scrollable = [].slice.call((isMobile ? document.querySelector('.scrollable-mobile') : document.querySelector('.scrollable-desktop')).children)
 
-    scrollable.forEach(element => {
-        element.addEventListener('click', () => {
-            writeData(Number(element.id))
+    scrollable.forEach(buttonElement => {
+        buttonElement.addEventListener('click', () => {
+            writeData(Number(buttonElement.id), buttonElement)
         })
     })
 }
@@ -62,13 +71,14 @@ const injectButtons = () => {
         </div>
         `
     })
-    console.log(container.children)
     container.innerHTML += `
         <div id="${isMobile ? container.childElementCount - 1 : container.childElementCount}">
             <img src="/assets/proximo.png" alt="">
         </div>  
-    `
+    `;
+
     setButtonListeners();
+
 }
 
 const detectEnd = () => {
@@ -102,5 +112,5 @@ arrow.addEventListener('click', () => {
 })
 
 injectButtons();
-writeData(0)
+writeData(0, document.getElementById('0'));
 setIndicator(1);

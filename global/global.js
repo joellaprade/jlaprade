@@ -74,7 +74,6 @@ const navColorChange = () => {
             tracker.loop = -1;
             break;
     }
-
     tracker.loop++;
 }
 
@@ -98,3 +97,39 @@ xButton.addEventListener('click', () => {
 })
 
 hideColors();
+
+
+
+
+
+
+var faders = document.querySelectorAll('.fader')
+var faderOptions = {
+    threshold: 0.75
+}
+const faderObserver = new IntersectionObserver((entries, faderObserver) => {
+    for(var entry of entries){
+        if(entry.isIntersecting){
+            entry.target.classList.add('appear')
+        }
+    }
+}, faderOptions)
+for(var fader of faders){
+    faderObserver.observe(fader);
+}
+
+
+var floaters = document.querySelectorAll('.floater')
+var floaterOptions = {
+    threshold: 0.75
+}
+const floaterObserver = new IntersectionObserver((entries, floaterObserver) => {
+    for(var entry of entries){
+        if(entry.isIntersecting){
+            entry.target.classList.add('appear')
+        }
+    }
+}, floaterOptions)
+for(var floater of floaters){
+    floaterObserver.observe(floater);
+}

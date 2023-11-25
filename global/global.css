@@ -353,3 +353,28 @@ button:hover {
 .menu-button {
     display: none;
 }
+
+
+
+
+/* TRANSITIONS */
+
+.fader {
+    opacity: 0;
+
+    transition: opacity 0.5s ease-out;
+}
+
+.fader.appear {
+    opacity: 1;
+}
+
+.floater {
+    translate: 0px 70px;
+
+    transition: translate 0.5s ease-out;
+}
+
+.floater.appear {
+    translate: 0px;
+}
