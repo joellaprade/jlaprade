@@ -113,4 +113,4 @@ arrow.addEventListener('click', () => {
 
 injectButtons();
 writeData(0, document.getElementById('0'));
-setIndicator(1);
+setIndicator(2);

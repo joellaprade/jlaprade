@@ -5,8 +5,8 @@ document.querySelector('#footer').innerHTML +=
         <div class="navegate">
             <b>Navegar</b>
             <a class="secondary" href="/index.html">Inicio</a>
-            <a class="secondary" href="/proyects/proyects.html">Proyectos</a>
             <a class="secondary" href="/products/products.html">Productos</a>
+            <a class="secondary" href="/proyects/proyects.html">Proyectos</a>
             <a class="secondary" target="_blank" href="https://wa.me/50687083439">Cotizar</a>
         </div>
         <div class="contact">

@@ -161,6 +161,8 @@ section .wrapper .arrow {
 
     height: 100%;
     transform: rotate(-90deg);
+    
+    cursor: pointer;
 }
 
 .rotate {

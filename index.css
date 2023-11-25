@@ -234,8 +234,8 @@ nav .background {
     position: absolute;
 }
 
-.benefit-4 > div > button {
-    margin: 0px var(--smallMargin);
+.benefit-4 > div > a > button, .benefit-4 > div > a {
+    margin: 0px calc(var(--smallMargin) / 2);
 
     color: white;
     border-color: white;

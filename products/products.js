@@ -1,1 +1,1 @@
-setIndicator(2);
+setIndicator(1);
