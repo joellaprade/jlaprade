@@ -100,16 +100,51 @@ h1 {
     width: 100%;
 }
 
-/* HACER GRADIENT, ARROW Y FUNCIONALIDAD PARA SLIDER */
-
 .slider .wrapper {
     width: 100%;
     overflow-x: scroll;
     position: relative;
 
+    scroll-behavior: smooth;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }.slider .wrapper::-webkit-scrollbar {display: none;}
+
+.slider .scroll-gradient-left {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: calc(150 * var(--shrink80));
+    height: 100%;
+}
+
+.slider .scroll-gradient-right {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    width: calc(150 * var(--shrink80));
+    height: 100%;
+}
+
+.slider .arrow {
+    z-index: 1;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transition: 0.5s transform ease-in-out;
+    align-self: center;
+
+    width: 30px;
+    transform: rotate(-90deg);
+    
+    cursor: pointer;
+}
 
 .frame {
     height: calc(500 * var(--shrink40));
@@ -119,12 +154,16 @@ h1 {
     position: absolute;
 
     width: 100%;
-    height: calc(200 * var(--shrink40));
+    height: calc(250 * var(--shrink40));
     z-index: -1;
 }
 
 .slider .copy{
     width: 100%;
+}
+
+.rotate {
+    transform: rotate(90deg) !important;
 }
 
 @media screen and (max-width: 960px){
