@@ -35,3 +35,21 @@ arrow.addEventListener('click', () => {
 
 
 setIndicator(1);
+
+/**
+ * Descripcion de animaciones
+ * 1.
+ * tenemos el "template" de la pagina web (rectangulo gris con navbar)
+ * hay 3 elementos animados (h1, copy, pic)
+ * van a subir y bajar de brilo en intervalos iguales pero desfazados
+ */
+
+/*
+
+hacer un wrapper con las medidas viejas
+posicionar elementos de animacion como absolute
+posicionar 
+en figma crear un frame de referencia (con las dimenciones del wrapper actual)
+poner todas las piezas en frame y exportar con frame
+    de forma que pueda estackear todas las piezas y fitteen como una imagen (y que sean responsive) 
+*/

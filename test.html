@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../components/head.js"></script>
+    <title>Proyectos</title>
+    <style>
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 60%;
+            aspect-ratio: 2/1;
+            position: relative;
+
+            outline: 10px solid black;
+        }
+        .gear-1 {
+            width: 21.5%;
+            aspect-ratio: 1;
+            position: absolute;
+
+            right: 0px;
+            top: 0px;
+
+            animation-name: rotation-animation;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+            animation-timing-function: linear;
+        }
+        .gear-2 {
+            width: 15%;
+            aspect-ratio: 1;
+            position: absolute;
+            
+            right: 10px;
+            top: 70px;
+
+            z-index: 1;
+
+            animation-name: rotation-animation;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+            animation-timing-function: linear;
+        }
+
+
+        @keyframes rotation-animation {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="nav" class="fader"></nav>
+    <script src="../components/nav.js"></script>
+
+    <section>
+        <div class="container">
+            <svg class="gear-1">
+                <use href="#gear-1"></use>
+            </svg>
+            <svg class="gear-2">
+                <use href="#gear-2"></use>
+            </svg>
+        </div>
+    </section>
+
+    <footer id="footer" class="fader"></footer>
+    <script src="../components/footer.js"></script>
+
+    <script src="../global/global.js"></script>
+    <script src="proyects.js"></script>
+</body>
+</html>
