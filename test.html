@@ -12,18 +12,16 @@
         }
         .container {
             width: 60%;
-            aspect-ratio: 2/1;
+            aspect-ratio: 164/87;
             position: relative;
-
-            outline: 10px solid black;
         }
         .gear-1 {
             width: 21.5%;
             aspect-ratio: 1;
             position: absolute;
 
-            right: 0px;
-            top: 0px;
+            right: 0%;
+            top: 0%;
 
             animation-name: rotation-animation;
             animation-duration: 2s;
@@ -31,25 +29,108 @@
             animation-timing-function: linear;
         }
         .gear-2 {
-            width: 15%;
             aspect-ratio: 1;
             position: absolute;
-            
-            right: 10px;
-            top: 70px;
+            width: 15%;
 
-            z-index: 1;
+            right: 5%;
+            top: 50%;
 
             animation-name: rotation-animation;
             animation-duration: 2s;
             animation-iteration-count: 1000;
             animation-timing-function: linear;
         }
+        .page-background {
+            aspect-ratio: 164/87;
+            position: absolute;
+            width: 100%;
 
+            right: 0%;
+            top: 0%;
+        }
+
+        .nav-btns {
+            aspect-ratio: 100/27;
+            position: absolute;
+            width: 15.24%;
+
+            right: 8.98%;
+            top: 6.32%;
+        }
+
+        .page-header {
+            aspect-ratio: 199/37;
+            position: absolute;
+            width: 30.8%;
+
+            left: 8.98%;
+            top: 34.91%;       
+        }
+
+        .page-copy {
+            aspect-ratio: 289/99;
+            position: absolute;
+            width: 43.81%;
+
+            left: 8.98%;
+            top: 53.55%;
+        }
+
+        .page-image {
+            aspect-ratio: 197/168;
+            position: absolute;
+            width: 30%;
+
+            right: 8.98%;
+            top: 34.91%;
+        }
+
+        .glow-0 {
+            animation-name: glow-0;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+            animation-timing-function: ease-in-out; 
+            animation-delay: 0s;
+        }
+
+        .glow-1 {
+            animation-name: glow-1;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+            animation-timing-function: ease-in-out; 
+            animation-delay: 0.25s;
+        }
+
+        .glow-2 {
+            animation-name: glow-2;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+            animation-timing-function: ease-in-out; 
+            animation-delay: 0.5s;
+        }
 
         @keyframes rotation-animation {
             0% {transform: rotate(0deg);}
             100% {transform: rotate(360deg);}
+        }
+
+        @keyframes glow-0 {
+            0% {fill: #898989}
+            50% {fill: #4D4D4D}
+            100% {fill: #898989}
+        }
+
+        @keyframes glow-1 {
+            0% {fill: #898989}
+            50% {fill: #4D4D4D}
+            100% {fill: #898989}
+        }
+
+        @keyframes glow-2 {
+            0% {fill: #898989}
+            50% {fill: #4D4D4D}
+            100% {fill: #898989}
         }
 
     </style>
@@ -60,11 +141,26 @@
 
     <section>
         <div class="container">
-            <svg class="gear-1">
+            <!-- <svg class="gear-1">
                 <use href="#gear-1"></use>
             </svg>
             <svg class="gear-2">
                 <use href="#gear-2"></use>
+            </svg> -->
+            <svg class="page-background">
+                <use href="#page-background"></use>
+            </svg>
+            <svg class="nav-btns">
+                <use href="#nav-btns"></use>
+            </svg>
+            <svg class="page-header">
+                <use href="#page-header"></use>
+            </svg>               
+            <svg class="page-copy">
+                <use href="#page-copy"></use>
+            </svg>            
+            <svg class="page-image">
+                <use href="#page-image"></use>
             </svg>
         </div>
     </section>
