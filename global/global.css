@@ -377,5 +377,44 @@ button:hover {
     translate: 0px;
 }
 
+
+
 /* ANIMATIONS */
 
+.up-down-0 {
+    animation-name: up-down;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+}
+
+.up-down-1 {
+    animation-name: up-down;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.up-down-2 {
+    animation-name: up-down;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.up-down-3 {
+    animation-name: up-down;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+}
+
+@keyframes up-down {
+    0% {translate: 0px 0px;}
+    50% {translate: 0px -15px;}
+    100% {translate: 0px 0px;}
+}

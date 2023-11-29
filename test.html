@@ -169,6 +169,164 @@
     <script src="../components/footer.js"></script>
 
     <script src="../global/global.js"></script>
-    <script src="proyects.js"></script>
+    <script>
+
+        // var array = [2, 54, 1, 98, 3, 5, 39];
+        var array = [0.4, 0.25, 0.18, 0.2, 0.3, 0.23, 0.7];
+        var a, b, key;
+
+        const insertionSort = (_arr, _n) => {
+            //for con a = 1 para targetear el segundo elemento y compararlo con el primero
+            for(a = 1; a < _n; a++){
+                key = _arr[a];      //valor a examinar
+                b = a - 1;          //inicializado a "a - 1" para siempre targetear al elemento a la izquierda de key
+                
+                /*
+                    WHILE:
+                    dentro del while se tiene el codigo que continuamente va
+                    bajando por el array para encontrar la posicion correcta
+                    para colocar a key
+                    tiene 2 condiciones para evaluar si debe continuar
+
+                    1. (b >= 0) se escribe por que en la logica dentro del
+                    while, continuamente le bajamos -1 a la variable b para 
+                    seguir evaluando el numero a la izquierda de key, el cual
+                    en teoria esta "viajando" hacia la izquierda dentro del 
+                    array cada vez que se determina que el valor a su 
+                    izquierda es mayor. Cuando b = 0, symboliza que ya no hay 
+                    mas varoles a la izquierda de key, en otras palabras, 
+                    estamos en la primera casilla del array y nuestro valor 
+                    esta de primero. Tambien significa que es el numero mas 
+                    bajo encontrado HASTA ESE INSTANTE y que la evaluacion del
+                    key actual debe detenerse para continuar con la proxima
+                    evaluacion.
+                    2. (_arr[b] > key) se escrbibe para evaluar si el numero a
+                    la izquierda de key es mayor
+                */
+                while(b >= 0 && _arr[b] > key){      
+                    /*
+                    si se ejecuto este bloque de codigo, es por que el numero
+                    a la izquierda de key es mayor. por ende, el numero a la 
+                    izquierda de key se coloca en la posicion de key con 
+                    (_arr[b + 1] = _arr[b]). En ese instante, el valor de
+                    _arr[b] esta duplicado en el array, pero no importa porque
+
+                    1. si el while se vuelve a ejecutar, la casilla donde
+                    originalmente estaba el valor del _arr[b] anteior se le
+                    asigna el valor del _arr[b] actual. Basicamente arreglamos
+                    el problema del valor duplicado para la iteracion anterior,
+                    pero acabamos de volver a hacer para la iteracion actual.
+                    
+                    2. si el while no se vuelve a ejecutar o ya paró de 
+                    ejecutarse, asignamos el valor de key en la casilla de donde
+                    se obtuvo el ultimo _arr[b], el cual en esa iteracion, su
+                    valor esta duplicado. Como resultado, finalmente se resolvió
+                    el problema del valor duplicado Y colocamos key donde se debía
+                    */   
+                    _arr[b + 1] = _arr[b];      
+                    b = b - 1;                  //le bajamos -1 a la variable b para evaluar el proximo valor a la izquierda 
+                }
+                /*
+                (_arr[b + 1] = key), enfasis en [b + 1]
+                esta linea es sumamente importante, dado que cubre dos posibles casos
+                
+                1. el while no se disparo, indicando que el key estaba donde debia
+                estar. En ese caso, ya que (b + 1 == a), se utiliza (b + 1) para
+                seleccionar la casilla a la que se le debe asignar el valor de key,
+                pero esta casilla es la misma casilla de donde se obtuvo el valor
+                de key. Por ende, el array queda intacto, ya que el key estaba 
+                donde debia estar.
+                
+                2. el while se disparó, por lo que a "b" se le ha estado disminuyendo
+                su valor por -1. Si el while se detuvo de disparar, symboliza que
+                el valor de _arr[b] es menor a key, por ende vamos a poner el valor
+                de key a la derecha de _arr[b], o en otras palabras, en _arr[b + 1]
+                */
+                _arr[b + 1] = key;
+            }
+            return _arr;
+        }
+
+        const bucketSort = (arr, n) => {
+            // crear buckets
+            var buckets = new Array(n);
+            for(i = 0; i < n; i++){
+                buckets[i] = []
+            }
+            //meter valores en buckets
+            for(i = 0; i < n; i++){
+                var valueToEvaluate = arr[i] * n;
+                var assignatedBucket = Math.floor(valueToEvaluate)
+                buckets[assignatedBucket].push(arr[i])
+            }
+            //ordenar buckets
+            for(i = 0; i < n; i++){
+                var orderedArr = insertionSort(buckets[i], buckets[i].length);
+                buckets[i] = orderedArr;
+            }
+            //concatenar
+            var index = 0;
+            for(i = 0; i < n; i++){
+                for(j = 0; j < buckets[i].length; j++){
+                    arr[index++] = buckets[i][j]
+                }
+            }
+            return arr
+        }
+
+        //console.log(bucketSort(array, array.length));
+        /*
+        QUICLSPORT notes:
+
+        i basicamente esta holding el indice de
+        la posicion correcta, cada iteracion PUEDE
+        que cambie, pero siempre es la mas correcta
+        hasta el momento
+
+        en j estamos revisando si la posicion 
+        siendo evaluada es menor a pivot
+        
+        basicamente vamos poniendo los valores
+        mayores al pivot al frente de i (a la
+        izquierda de i, los valores siempre
+        seran menores al pivot)
+        */
+
+        const quickSort = (arr, start, end) => {
+
+            if(end <= start) return;    //caso base para cuando ya no se pueda dividir mas el partition
+
+            let pivot = partition(arr, start, end);
+            quickSort(arr, start, pivot - 1);
+            quickSort(arr, pivot + 1, end);
+
+            return arr;
+        }
+
+        const partition = (arr, start, end) => {
+            let pivot = arr[end];
+            let i = start - 1;
+
+            for(let j = start; j <= end; j++){
+                if(arr[j] < pivot){
+                    i++;
+                    let temp = arr[i];
+                    arr[i] = arr[j]
+                    arr[j] = temp;
+                }
+            }
+            i++;
+            let temp = arr[i];
+            arr[i] = arr[end]
+            arr[end] = temp;
+
+            return i;
+        }
+
+
+        console.log(quickSort(array, 0, array.length - 1))
+
+    </script>
 </body>
 </html>
+

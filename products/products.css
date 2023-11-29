@@ -33,8 +33,9 @@ h1 {
 
 .body {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    
+    width: 84%;
     margin: var(--mediumMargin) 0px;
 }
 
@@ -62,9 +63,9 @@ h1 {
 }
 
 .ilustration {
-    width: 32%;
+    width: 40%;
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -165,6 +166,148 @@ h1 {
 .rotate {
     transform: rotate(90deg) !important;
 }
+
+
+
+
+
+
+.static-svg-container {
+    width: 100%;
+    aspect-ratio: 164/87;
+    position: relative;
+}
+
+.page-background {
+    aspect-ratio: 164/87;
+    position: absolute;
+    width: 100%;
+
+    right: 0%;
+    top: 0%;
+}
+
+.nav-btns {
+    aspect-ratio: 100/27;
+    position: absolute;
+    width: 15.24%;
+
+    right: 8.98%;
+    top: 6.32%;
+}
+
+.page-header {
+    aspect-ratio: 199/37;
+    position: absolute;
+    width: 30.8%;
+
+    left: 8.98%;
+    top: 34.91%;       
+}
+
+.page-copy {
+    aspect-ratio: 289/99;
+    position: absolute;
+    width: 43.81%;
+
+    left: 8.98%;
+    top: 53.55%;
+}
+
+.page-image {
+    aspect-ratio: 197/168;
+    position: absolute;
+    width: 30%;
+
+    right: 8.98%;
+    top: 34.91%;
+}
+
+
+
+
+
+
+
+
+.glow-0 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0s;
+}
+
+.glow-1 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.25s;
+}
+
+.glow-2 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.5s;
+}
+
+
+body .up-down-0 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+}
+
+body .up-down-1 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+
+body .up-down-2 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+body .up-down-3 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+}
+
+body .up-down-4 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+}
+
+@keyframes rotation-animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes glow {
+    0% {fill: #898989}
+    50% {fill: #4D4D4D}
+    100% {fill: #898989}
+}
+
+
+
 
 @media screen and (max-width: 960px){
 

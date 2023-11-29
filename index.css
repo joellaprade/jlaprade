@@ -268,17 +268,6 @@ nav .background {
     justify-self: center !important;
 
     transition: opacity 0.3s ease-out;
-
-    animation-name: up-down;
-    animation-duration: 1.5s;
-    animation-iteration-count: 10000;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes up-down {
-    0% {translate: 0px 0px;}
-    50% {translate: 0px -15px;}
-    100% {translate: 0px 0px;}
 }
 
 .arrow-wrapper  {
