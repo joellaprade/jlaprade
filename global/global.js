@@ -133,3 +133,4 @@ const floaterObserver = new IntersectionObserver((entries, floaterObserver) => {
 for(var floater of floaters){
     floaterObserver.observe(floater);
 }
+
