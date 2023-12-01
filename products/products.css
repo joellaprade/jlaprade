@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 
 
 section {
@@ -13,16 +6,9 @@ section {
 }
 
 section > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dynamic {
@@ -46,12 +32,8 @@ h1 {
 }
 
 .body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     
     width: 84%;
     margin: var(--mediumMargin) 0px;
@@ -63,16 +45,9 @@ h1 {
 
 .benefit {
     width: 16%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
     
 .benefit > div:nth-child(1){
@@ -90,32 +65,20 @@ h1 {
 .ilustration {
     width: 40%;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
 }
 
 .ilustration > img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 100%;
 }
 
 
 .benefits-1 > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    flex-direction: column;
+    align-items: end;
 }
 
 .benefits-1 > div > p {
@@ -149,8 +112,6 @@ h1 {
 }.slider .wrapper::-webkit-scrollbar {display: none;}
 
 .slider .scroll-gradient-left {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
-    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     z-index: 1;
     position: absolute;
@@ -162,8 +123,6 @@ h1 {
 }
 
 .slider .scroll-gradient-right {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), color-stop(90%, rgba(255,255,255,1)));
-    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
     z-index: 1;
     position: absolute;
@@ -179,19 +138,11 @@ h1 {
     position: absolute;
     right: 20px;
     top: 50%;
-    -webkit-transition: 0.5s -webkit-transform ease-in-out;
-    transition: 0.5s -webkit-transform ease-in-out;
-    -o-transition: 0.5s transform ease-in-out;
     transition: 0.5s transform ease-in-out;
-    transition: 0.5s transform ease-in-out, 0.5s -webkit-transform ease-in-out;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
 
     width: 30px;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
     
     cursor: pointer;
 }
@@ -213,9 +164,7 @@ h1 {
 }
 
 .rotate {
-    -webkit-transform: rotate(90deg) !important;
-        -ms-transform: rotate(90deg) !important;
-            transform: rotate(90deg) !important;
+    transform: rotate(90deg) !important;
 }
 
 
@@ -405,152 +354,106 @@ h1 {
 .glow-0 {
     animation-name: glow;
     animation-duration: 2s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
     animation-delay: 0s;
 
     -webkit-animation-name: glow;
     -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 1000;
+    -webkit-animation-timing-function: ease-in-out; 
     -webkit-animation-delay: 0s;
 }
 
 .glow-1 {
     animation-name: glow;
     animation-duration: 2s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
     animation-delay: 0.25s;
 
     -webkit-animation-name: glow;
     -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 1000;
+    -webkit-animation-timing-function: ease-in-out; 
     -webkit-animation-delay: 0.25s;
 }
 
 .glow-2 {
-    -webkit-animation-name: glow;
-            animation-name: glow;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: 10;
-            animation-iteration-count: 10;
-    -webkit-animation-delay: 0.5s; 
-            animation-delay: 0.5s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.5s;
 }
 
 .glow-3 {
-    -webkit-animation-name: glow;
-            animation-name: glow;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: 10;
-            animation-iteration-count: 10;
-    -webkit-animation-delay: 0.75s; 
-            animation-delay: 0.75s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.75s;
 }
 
 
 body .up-down-0 {
-    -webkit-animation-name: up-down;
-            animation-name: up-down;
-    -webkit-animation-duration: 2.6s;
-            animation-duration: 2.6s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0;
-            animation-delay: 0;
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
 }
 
 body .up-down-1 {
-    -webkit-animation-name: up-down;
-            animation-name: up-down;
-    -webkit-animation-duration: 2.6s;
-            animation-duration: 2.6s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
 }
 
 body .up-down-2 {
-    -webkit-animation-name: up-down;
-            animation-name: up-down;
-    -webkit-animation-duration: 2.6s;
-            animation-duration: 2.6s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
 }
 
 body .up-down-3 {
-    -webkit-animation-name: up-down;
-            animation-name: up-down;
-    -webkit-animation-duration: 2.6s;
-            animation-duration: 2.6s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
 }
 
 body .up-down-4 {
-    -webkit-animation-name: up-down;
-            animation-name: up-down;
-    -webkit-animation-duration: 2.6s;
-            animation-duration: 2.6s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0.8s;
-            animation-delay: 0.8s;
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
 }
 
 body .rotating-0 {
-    -webkit-animation-name: rotation-animation;
-            animation-name: rotation-animation;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-name: rotation-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 10000;
+    animation-timing-function: linear;
 }
 
 body .rotating-1 {
-    -webkit-animation-name: rotation-animation;
-            animation-name: rotation-animation;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: 10000;
-            animation-iteration-count: 10000;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-name: rotation-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+    animation-timing-function: linear;
     animation-direction: reverse;
 }
 
-@-webkit-keyframes rotation-animation {
-    0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-}
-
 @keyframes rotation-animation {
-    0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-}
-
-@-webkit-keyframes glow {
-    0% {fill: #898989}
-    50% {fill: #4D4D4D}
-    100% {fill: #898989}
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 @keyframes glow {
@@ -569,50 +472,27 @@ body .rotating-1 {
     }
 
     .mobile {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
     }
 
     .body {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .benefits-2 {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         width: 50%;
     }
 
     .benefits-2 > div {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .benefits-2 > div > img {
@@ -625,12 +505,8 @@ body .rotating-1 {
     }
 
     .name{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         text-align: center;
     }
 
