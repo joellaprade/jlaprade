@@ -172,13 +172,13 @@ h1 {
 
 
 
-.static-svg-container {
+.static .svg-container {
     width: 100%;
     aspect-ratio: 164/87;
     position: relative;
 }
 
-.page-background {
+.static .page-background {
     aspect-ratio: 164/87;
     position: absolute;
     width: 100%;
@@ -187,7 +187,7 @@ h1 {
     top: 0%;
 }
 
-.nav-btns {
+.static .nav-btns {
     aspect-ratio: 100/27;
     position: absolute;
     width: 15.24%;
@@ -196,7 +196,7 @@ h1 {
     top: 6.32%;
 }
 
-.page-header {
+.static .page-header {
     aspect-ratio: 199/37;
     position: absolute;
     width: 30.8%;
@@ -205,7 +205,7 @@ h1 {
     top: 34.91%;       
 }
 
-.page-copy {
+.static .page-copy {
     aspect-ratio: 289/99;
     position: absolute;
     width: 43.81%;
@@ -214,13 +214,134 @@ h1 {
     top: 53.55%;
 }
 
-.page-image {
+.static .page-image {
     aspect-ratio: 197/168;
     position: absolute;
     width: 30%;
 
     right: 8.98%;
     top: 34.91%;
+}
+
+
+
+
+
+
+.dynamic .svg-container {
+    width: 100%;
+    aspect-ratio: 164/87;
+    position: relative;
+}
+
+.dynamic .static-container {
+    aspect-ratio: 164/87;
+    position: relative;
+    width: 83.9%;
+
+    left: 0%;
+    top: 0%;
+}
+
+.dynamic .page-background {
+    aspect-ratio: 164/87;
+    position: absolute;
+    width: 100%;
+
+    left: 0%;
+    top: 0%;
+}
+
+.dynamic .nav-btns {
+    aspect-ratio: 100/27;
+    position: absolute;
+    width: 15.24%;
+
+    right: 8.98%;
+    top: 6.32%;
+}
+
+.dynamic .page-header {
+    aspect-ratio: 199/37;
+    position: absolute;
+    width: 30.8%;
+
+    left: 8.98%;
+    top: 34.91%;       
+}
+
+.dynamic .page-copy {
+    aspect-ratio: 289/99;
+    position: absolute;
+    width: 43.81%;
+
+    left: 8.98%;
+    top: 53.55%;
+}
+
+.dynamic .page-image {
+    aspect-ratio: 197/168;
+    position: absolute;
+    width: 30%;
+
+    right: 8.98%;
+    top: 34.91%;
+}
+
+.dynamic .dynamic-bg {
+    aspect-ratio: 91/41;
+    position: absolute;
+    width: 82.72%;
+
+    right: 15.5%;
+    top: 13.5%;
+    z-index: 2;
+
+    fill: #282828;
+}
+
+.dynamic .wires {
+    aspect-ratio: 520/203;
+    position: absolute;
+    width: 68.42%;
+
+    left: 16%;
+    top: 22%;
+    z-index: 2;
+}
+
+.dynamic .cpu {
+    aspect-ratio: 173/201;
+    position: absolute;
+    width: 22.76%;
+
+    left: 53%;
+    top: 33%;
+    z-index: 2;
+}
+
+.dynamic .gear-0 {
+    aspect-ratio: 1/1;
+    position: absolute;
+    width: 25.46%;
+
+    left: 63%;
+    bottom: 0%;
+    z-index: 2;
+
+    fill: #AAA;
+}
+
+.dynamic .gear-1 {
+    aspect-ratio: 1/1;
+    position: absolute;
+    width: 17.01%;
+
+    right: 0%;
+    top: 25%;
+    z-index: 2;
+
+    fill: #6A6A6A;
 }
 
 
@@ -252,6 +373,14 @@ h1 {
     animation-iteration-count: 1000;
     animation-timing-function: ease-in-out; 
     animation-delay: 0.5s;
+}
+
+.glow-3 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.75s;
 }
 
 
@@ -293,6 +422,21 @@ body .up-down-4 {
     animation-iteration-count: 10000;
     animation-timing-function: ease-in-out;
     animation-delay: 0.8s;
+}
+
+body .rotating-0 {
+    animation-name: rotation-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 10000;
+    animation-timing-function: linear;
+}
+
+body .rotating-1 {
+    animation-name: rotation-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+    animation-timing-function: linear;
+    animation-direction: reverse;
 }
 
 @keyframes rotation-animation {
