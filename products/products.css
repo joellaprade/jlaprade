@@ -457,9 +457,9 @@ body .rotating-1 {
 }
 
 @keyframes glow {
-    0% {-webkit-fill: #898989}
-    50% {-webkit-fill: #4D4D4D}
-    100% {-webkit-fill: #898989}
+    0% {fill: #898989}
+    50% {fill: #4D4D4D}
+    100% {fill: #898989}
 }
 
 
