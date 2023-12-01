@@ -134,3 +134,7 @@ for(var floater of floaters){
     floaterObserver.observe(floater);
 }
 
+setTimeout(() => {
+    console.log('ran')
+    document.querySelector('.glow-0').classList.add('.red')
+}, 400);

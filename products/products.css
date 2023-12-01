@@ -438,14 +438,14 @@ body .up-down-4 {
 
 body .rotating-0 {
     animation-name: rotation-animation;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-iteration-count: 10000;
     animation-timing-function: linear;
 }
 
 body .rotating-1 {
     animation-name: rotation-animation;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: 10000;
     animation-timing-function: linear;
     animation-direction: reverse;
@@ -457,9 +457,9 @@ body .rotating-1 {
 }
 
 @keyframes glow {
-    0% {fill: #898989}
+    0% {fill: #9C9C9C}
     50% {fill: #4D4D4D}
-    100% {fill: #898989}
+    100% {fill: #9C9C9C}
 }
 
 
@@ -514,4 +514,8 @@ body .rotating-1 {
     .desktop {
         display: none;
     }
+}
+
+h1:nth-child(1){
+    line-height: 1.2;
 }
