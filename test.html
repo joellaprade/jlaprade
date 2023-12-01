@@ -171,8 +171,9 @@
     <script src="../global/global.js"></script>
     <script>
 
-        // var array = [2, 54, 1, 98, 3, 5, 39];
-        var array = [0.4, 0.25, 0.18, 0.2, 0.3, 0.23, 0.7];
+        var array = [2, 54, 1, 98, 3, 5, 39, 3, 7, 24];
+        // var array = [0.4, 0.25, 0.18, 0.2, 0.3, 0.23, 0.7];
+
         var a, b, key;
 
         const insertionSort = (_arr, _n) => {
@@ -271,7 +272,7 @@
                     arr[index++] = buckets[i][j]
                 }
             }
-            return arr
+            return arr;
         }
 
         //console.log(bucketSort(array, array.length));
@@ -291,6 +292,7 @@
         izquierda de i, los valores siempre
         seran menores al pivot)
         */
+
 
         const quickSort = (arr, start, end) => {
 
@@ -324,7 +326,7 @@
         }
 
 
-        console.log(quickSort(array, 0, array.length - 1))
+        console.log(quickSort(array, 0, array.length - 1));
 
     </script>
 </body>
