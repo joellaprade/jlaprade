@@ -405,28 +405,24 @@ h1 {
 .glow-0 {
     animation-name: glow;
     animation-duration: 2s;
-    animation-iteration-count: 1000;
-    animation-timing-function: ease-in-out; 
+    animation-iteration-count: 10;
     animation-delay: 0s;
 
     -webkit-animation-name: glow;
     -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 1000;
-    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-iteration-count: 10;
     -webkit-animation-delay: 0s;
 }
 
 .glow-1 {
     animation-name: glow;
     animation-duration: 2s;
-    animation-iteration-count: 1000;
-    animation-timing-function: ease-in-out; 
+    animation-iteration-count: 10;
     animation-delay: 0.25s;
 
     -webkit-animation-name: glow;
     -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 1000;
-    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-iteration-count: 10;
     -webkit-animation-delay: 0.25s;
 }
 
@@ -435,10 +431,8 @@ h1 {
             animation-name: glow;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
-    -webkit-animation-iteration-count: 1000;
-            animation-iteration-count: 1000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; 
+    -webkit-animation-iteration-count: 10;
+            animation-iteration-count: 10;
     -webkit-animation-delay: 0.5s; 
             animation-delay: 0.5s;
 }
@@ -448,10 +442,8 @@ h1 {
             animation-name: glow;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
-    -webkit-animation-iteration-count: 1000;
-            animation-iteration-count: 1000;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; 
+    -webkit-animation-iteration-count: 10;
+            animation-iteration-count: 10;
     -webkit-animation-delay: 0.75s; 
             animation-delay: 0.75s;
 }
