@@ -1,0 +1,517 @@
+
+
+section {
+    height: 100%;
+    padding-top: 175px;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dynamic {
+    margin-top: var(--extraLargeMargin);
+}
+
+h1 {
+    color: black;
+    font-weight: 500;
+}
+
+.line {
+    height: calc(10 * var(--shrink40));
+    width: 100px;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.name {
+    margin: var(--mediumMargin) 0px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 84%;
+    margin: var(--mediumMargin) 0px;
+}
+
+.body > div {
+    position: relative;
+    }
+
+.benefit {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+.benefit > div:nth-child(1){
+    margin-bottom: var(--smallMargin);
+}
+
+.benefit > div > img {
+    width: calc(80 * var(--shrink40)) !important;
+}
+
+.benefit > div > p {
+    text-indent: 10%;
+}
+
+.ilustration {
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ilustration > img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+.benefits-1 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.benefits-1 > div > p {
+    text-align: end;
+}
+
+.extras {
+    margin-top: var(--extraLargeMargin);
+}
+
+/* HIDDEN */
+
+.mobile {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    margin: calc(var(--mediumMargin) + var(--smallMargin)) 0px;
+    width: 100%;
+}
+
+.slider .wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}.slider .wrapper::-webkit-scrollbar {display: none;}
+
+.slider .scroll-gradient-left {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: calc(150 * var(--shrink80));
+    height: 100%;
+}
+
+.slider .scroll-gradient-right {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    width: calc(150 * var(--shrink80));
+    height: 100%;
+}
+
+.slider .arrow {
+    z-index: 1;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transition: 0.5s transform ease-in-out;
+    align-self: center;
+
+    width: 30px;
+    transform: rotate(-90deg);
+    
+    cursor: pointer;
+}
+
+.frame {
+    height: calc(500 * var(--shrink40));
+}
+
+.frame-gradient {
+    position: absolute;
+
+    width: 100%;
+    height: calc(250 * var(--shrink40));
+    z-index: -1;
+}
+
+.slider .copy{
+    width: 100%;
+}
+
+.rotate {
+    transform: rotate(90deg) !important;
+}
+
+
+
+
+
+
+.static .svg-container {
+    width: 100%;
+    aspect-ratio: 164/87;
+    position: relative;
+}
+
+.static .page-background {
+    aspect-ratio: 164/87;
+    position: absolute;
+    width: 100%;
+
+    right: 0%;
+    top: 0%;
+}
+
+.static .nav-btns {
+    aspect-ratio: 100/27;
+    position: absolute;
+    width: 15.24%;
+
+    right: 8.98%;
+    top: 6.32%;
+}
+
+.static .page-header {
+    aspect-ratio: 199/37;
+    position: absolute;
+    width: 30.8%;
+
+    left: 8.98%;
+    top: 34.91%;       
+}
+
+.static .page-copy {
+    aspect-ratio: 289/99;
+    position: absolute;
+    width: 43.81%;
+
+    left: 8.98%;
+    top: 53.55%;
+}
+
+.static .page-image {
+    aspect-ratio: 197/168;
+    position: absolute;
+    width: 30%;
+
+    right: 8.98%;
+    top: 34.91%;
+}
+
+
+
+
+
+
+.dynamic .svg-container {
+    width: 100%;
+    aspect-ratio: 164/87;
+    position: relative;
+}
+
+.dynamic .static-container {
+    aspect-ratio: 164/87;
+    position: relative;
+    width: 83.9%;
+
+    left: 0%;
+    top: 0%;
+}
+
+.dynamic .page-background {
+    aspect-ratio: 164/87;
+    position: absolute;
+    width: 100%;
+
+    left: 0%;
+    top: 0%;
+}
+
+.dynamic .nav-btns {
+    aspect-ratio: 100/27;
+    position: absolute;
+    width: 15.24%;
+
+    right: 8.98%;
+    top: 6.32%;
+}
+
+.dynamic .page-header {
+    aspect-ratio: 199/37;
+    position: absolute;
+    width: 30.8%;
+
+    left: 8.98%;
+    top: 34.91%;       
+}
+
+.dynamic .page-copy {
+    aspect-ratio: 289/99;
+    position: absolute;
+    width: 43.81%;
+
+    left: 8.98%;
+    top: 53.55%;
+}
+
+.dynamic .page-image {
+    aspect-ratio: 197/168;
+    position: absolute;
+    width: 30%;
+
+    right: 8.98%;
+    top: 34.91%;
+}
+
+.dynamic .dynamic-bg {
+    aspect-ratio: 91/41;
+    position: absolute;
+    width: 82.72%;
+
+    right: 15.5%;
+    top: 13.5%;
+    z-index: 2;
+
+    fill: #282828;
+}
+
+.dynamic .wires {
+    aspect-ratio: 520/203;
+    position: absolute;
+    width: 68.42%;
+
+    left: 16%;
+    top: 22%;
+    z-index: 2;
+}
+
+.dynamic .cpu {
+    aspect-ratio: 173/201;
+    position: absolute;
+    width: 22.76%;
+
+    left: 53%;
+    top: 33%;
+    z-index: 2;
+}
+
+.dynamic .gear-0 {
+    aspect-ratio: 1/1;
+    position: absolute;
+    width: 25.46%;
+
+    left: 63%;
+    bottom: 0%;
+    z-index: 2;
+
+    fill: #AAA;
+}
+
+.dynamic .gear-1 {
+    aspect-ratio: 1/1;
+    position: absolute;
+    width: 17.01%;
+
+    right: 0%;
+    top: 25%;
+    z-index: 2;
+
+    fill: #6A6A6A;
+}
+
+
+
+
+
+
+
+
+.glow-0 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0s;
+
+    -webkit-animation-name: glow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1000;
+    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-delay: 0s;
+}
+
+.glow-1 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.25s;
+
+    -webkit-animation-name: glow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1000;
+    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-delay: 0.25s;
+}
+
+.glow-2 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.5s;
+}
+
+.glow-3 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0.75s;
+}
+
+
+body .up-down-0 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+}
+
+body .up-down-1 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+
+body .up-down-2 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+body .up-down-3 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+}
+
+body .up-down-4 {
+    animation-name: up-down;
+    animation-duration: 2.6s;
+    animation-iteration-count: 10000;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+}
+
+body .rotating-0 {
+    animation-name: rotation-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 10000;
+    animation-timing-function: linear;
+}
+
+body .rotating-1 {
+    animation-name: rotation-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes rotation-animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes glow {
+    0% {fill: #898989}
+    50% {fill: #4D4D4D}
+    100% {fill: #898989}
+}
+
+
+
+
+@media screen and (max-width: 960px){
+
+    p {
+        text-indent: 0% !important;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .benefits-2 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-2 > div > img {
+        margin: var(--mediumMargin) 0px var(--smallMargin) 0px;
+
+    }
+
+    .ilustration {
+        width: 60%;
+    }
+
+    .name{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* HIDDEN   */
+    .desktop {
+        display: none;
+    }
+}
