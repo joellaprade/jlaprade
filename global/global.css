@@ -81,7 +81,7 @@ nav {
     width: 100%;
 
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 5;
 }
 
 nav .background {
@@ -278,6 +278,15 @@ footer .copy a, b{
     margin: 5px 0px;
 }
 
+footer .phone {
+    stroke: #A4A4A4;
+    transition: stroke 250ms ease-in-out;
+}
+
+footer .mail {
+    fill: #A4A4A4;
+    transition: fill 250ms ease-in-out;
+}
 
 
 

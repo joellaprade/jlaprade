@@ -81,8 +81,8 @@ arrowObserver.observe(benefit0)
 
 const scrollFooter = () => {
     var container = document.querySelector(".container")
-    console.log('ran')
 
+    hideMenu();    
     window.scrollTo({ top: 2000, behavior: "smooth" })
 
     setTimeout(() => {
@@ -95,7 +95,9 @@ const scrollFooter = () => {
 }
 
 for(let link of document.querySelectorAll('.contacto-link')){
-    link.addEventListener('click', scrollFooter)
+    link.addEventListener('click', () => {
+        scrollFooter();
+    })
 }
 
 setIndicator(0);

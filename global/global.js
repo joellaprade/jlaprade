@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const xButton = document.querySelector('.x');
 const menuWrapper = document.querySelector('.menu-wrapper');
-
+const contactDiv = document.querySelector('.contact');
 
 const openMenu = () => {
     menuWrapper.style.translate = "-200px 0px";
@@ -9,7 +9,32 @@ const openMenu = () => {
 
 const hideMenu = () => {
     menuWrapper.style.translate = "0px";
+}
 
+const colorContact = () => {
+    var isIndex = window.location.pathname == '/index.html' ? true : false;
+    var phone = contactDiv.querySelector('.phone');
+    var mail = contactDiv.querySelector('.mail');
+    var delay1, delay2;
+
+    if(isIndex){
+        delay1 = 2000;
+        delay2 = 3000;
+    }else {
+        delay1 = 1000;
+        delay2 = 2000;
+        hideMenu();
+    }
+
+    setTimeout(() => {
+        phone.style.stroke = "#FFFFFF";
+        mail.style.fill = '#FFFFFF';
+    }, delay1)
+
+    setTimeout(() => {
+        phone.style.stroke = '#A4A4A4';
+        mail.style.fill = '#A4A4A4';
+    }, delay2)
 }
 
 
@@ -134,7 +159,9 @@ for(var floater of floaters){
     floaterObserver.observe(floater);
 }
 
-setTimeout(() => {
-    console.log('ran')
-    document.querySelector('.glow-0').classList.add('.red')
-}, 400);
+
+for(let link of document.querySelectorAll('.contacto-link')){
+    link.addEventListener('click', () => {
+        colorContact()
+    })
+}
