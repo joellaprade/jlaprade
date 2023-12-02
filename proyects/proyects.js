@@ -87,7 +87,7 @@ const detectEnd = () => {
     var endMargin = slider.scrollLeft + slider.getBoundingClientRect().width - scrollable.getBoundingClientRect().width;
     if(-1 < endMargin && endMargin < 1){
         goBack = true
-        arrow.children[0].classList.add('rotate')
+        arrow.classList.add('rotate')
     }
 }
 
