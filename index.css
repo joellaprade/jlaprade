@@ -493,11 +493,11 @@ nav .background {
 
 .phone-bg {
     position: absolute;
-    aspect-ratio: 234/398;
+    aspect-ratio: 234/392;
     width: 100%;
     
     left: 0%;
-    bottom: 2.25%;
+    bottom: 2.9%;
 }
 
 .phone-copy {
@@ -514,4 +514,75 @@ nav .background {
     width: 31.89%;
     
     bottom: 12.5%;
+}
+
+.bg-svg {
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+
+    /* overflow: visible; */
+
+    z-index: -100;
+}
+
+.orange-orb {
+    position: absolute;
+    aspect-ratio: 451/325;
+    width: 105.6%;
+    
+    top: -38%;
+    left: -38%;
+}
+
+.pink-orb {
+    position: absolute;
+    aspect-ratio: 246/367;
+    width: 83.4%;
+    
+    top: -55%;
+    right: -15%;
+}
+
+.blue-orb {
+    position: absolute;
+    aspect-ratio: 764/997;
+    width: 89.5%;
+    
+    top: -45%;
+    left: -15%;
+}
+
+.glow-0 {
+    animation-name: glow;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: -1s;
+    opacity: 0;
+}
+
+.glow-1 {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.glow-2 {
+    animation-name: glow;
+    animation-duration: 2.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes glow {
+    0% {opacity: 0;}
+    40% {opacity: 0.9;}
+    60% {opacity: 0.9;}
+    100% {opacity: 0;}
 }
