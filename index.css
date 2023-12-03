@@ -18,7 +18,7 @@ nav .background {
 .hero {
     width: 100%;
     height: 100vh;
-    margin-bottom: calc(var(--largeMargin) * 2);
+    margin-bottom: calc(var(--largeMargin) * 3);
 
     display: flex;
     flex-direction: row-reverse;
@@ -285,10 +285,12 @@ nav .background {
 
 @media screen and (max-width: 960px){
 
+    
     body .hero {
         flex-direction: column-reverse;
         justify-content: start;
-    }
+        margin-bottom: var(--largeMargin);
+}
 
     body .hero > .container-0 {
         display: flex;
@@ -361,7 +363,7 @@ nav .background {
     }
 
     body .benefits .copy {
-        width: 70%;
+        width: 100%;
 
         text-align: center;
     }

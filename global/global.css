@@ -4,7 +4,7 @@
     --shrink40: calc(1px - (1920px - 100vw) * 0.000263);
     --shrink20: calc(1px - (1920px - 100vw) * 0.00018);
     --grow40: calc(1px + (1920px - 100vw) * 0.000263);
-    --f20Px: calc(20 * var(--shrink40));
+    --f20Px: calc(20 * var(--shrink20));
     --f32Px: calc(32 * var(--shrink40));
     --f75Px: calc(75 * var(--shrink60));
     --f90Px: calc(90 * var(--shrink40));
@@ -108,9 +108,11 @@ nav > .wrapper {
     object-fit: contain;
 }
 
+
 .link-container > * {
     margin-left: calc(50 * var(--shrink40));
     color: white;
+    height: 70%;
 }
 
 .link-container button {
@@ -363,6 +365,21 @@ button:hover {
 
 .menu-button {
     display: none;
+}
+
+
+
+
+
+/* PSEUDO */
+
+.hover-float {
+    display: inline-block;
+    transition: translate 0.2s ease-out;
+}
+
+.hover-float:hover {
+    translate: 0px -7px;
 }
 
 

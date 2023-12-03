@@ -21,7 +21,7 @@ h1 {
 }
 
 .line {
-    height: calc(10 * var(--shrink40));
+    height: calc(7.5 * var(--shrink40));
     width: 100px;
     border-radius: 100px;
     background-color: black;
@@ -148,7 +148,7 @@ h1 {
 }
 
 .frame {
-    height: calc(500 * var(--shrink40));
+    height: calc(400 * var(--shrink40));
 }
 
 .frame-gradient {
@@ -433,7 +433,7 @@ body .rotating-0 {
 
 body .rotating-1 {
     animation-name: rotation-animation;
-    animation-duration: 1.5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: reverse;

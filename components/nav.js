@@ -6,10 +6,10 @@ document.querySelector('nav').innerHTML +=
         <img src="/assets/logo.png" class="logo">
     </a>
     <div class="link-container">
-        <a href="/index.html" class="link">Inicio</a>
-        <a href="/products/products.html" class="link">Productos</a>
-        <a href="/proyects/proyects.html" class="link">Proyectos</a>
-        <a href="#footer" class="link contacto-link">Contacto</a>
+        <a href="/index.html" class="link hover-float">Inicio</a>
+        <a href="/products/products.html" class="link hover-float">Productos</a>
+        <a href="/proyects/proyects.html" class="link hover-float">Proyectos</a>
+        <a href="#footer" class="link contacto-link hover-float">Contacto</a>
         <a target="_blank" href="https://wa.me/50687083439">
             <button>Cotizar</button>
         </a>
