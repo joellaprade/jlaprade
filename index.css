@@ -294,7 +294,7 @@ nav .background {
         display: flex;
         justify-content: center;
         position: relative;
-        padding: 8vw 16vw;
+        padding: 8vh 16vw;
 
         height: 40%;
         width: 100%;
@@ -385,6 +385,18 @@ nav .background {
     body .benefit-4 h1 {
         margin-top: 0px;
     }
+
+    body .hero-svg {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body .hero-svg {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -398,3 +410,108 @@ nav .background {
 }
 
 
+.hero-svg {
+    position: relative;
+    aspect-ratio: 61/37;
+    height: auto;
+    width: 100%;
+}
+
+.pc-svg {
+    position: absolute;
+    aspect-ratio: 369/259;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pc-nav {
+    position: absolute;
+    aspect-ratio: 100/8;
+    width: 100%;
+    
+    left: 0%;
+    top: 0%;
+}
+
+.pc-bg {
+    position: absolute;
+    aspect-ratio: 41/23.25;
+    width: 100%;
+    
+    left: 0%;
+    top: 0%;
+}
+
+.pc-base {
+    position: absolute;
+    aspect-ratio: 118/49;
+    width: 33.72%;
+    
+    bottom: 0%;
+}
+
+.pc-nav-btns {
+    position: absolute;
+    aspect-ratio: 89/19;
+    width: 11.12%;
+    
+    top: 4%;
+    right: 4%;
+}
+
+.pc-copy {
+    position: absolute;
+    aspect-ratio: 71/34;
+    width: 68.16%;
+    
+    top: 21.5%;
+    left: 6.37%;
+}
+
+.phone-svg {
+    position: absolute;
+    aspect-ratio: 232/413;
+    height: 79.73%;
+
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.phone-border {
+    position: absolute;
+    aspect-ratio: 232/413;
+    width: 100%;
+    
+    left: 0%;
+    bottom: 0%;
+}
+
+.phone-bg {
+    position: absolute;
+    aspect-ratio: 234/398;
+    width: 100%;
+    
+    left: 0%;
+    bottom: 2.25%;
+}
+
+.phone-copy {
+    position: absolute;
+    aspect-ratio: 166/211;
+    width: 74%;
+    
+    top: 1.75%;
+}
+
+.phone-ilustration {
+    position: absolute;
+    aspect-ratio: 103/60;
+    width: 31.89%;
+    
+    bottom: 12.5%;
+}
