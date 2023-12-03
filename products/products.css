@@ -175,7 +175,7 @@ h1 {
 .static .svg-container {
     width: 100%;
     aspect-ratio: 164/87;
-    position: relative;
+    position: absolute;
 }
 
 .static .page-background {
