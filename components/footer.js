@@ -1,6 +1,8 @@
 document.querySelector('#footer').innerHTML += 
 `
-    <img src="/assets/footer-background.png" alt="" class="background">
+    <svg class="background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 400" fill="none">
+        <path d="M3413 766C3413 1189.05 2314.75 1532 960 1532C-394.755 1532 -1493 1189.05 -1493 766C-1493 342.95 -394.755 0 960 0C2314.75 0 3413 342.95 3413 766Z" fill="#181818"/>
+    </svg>
     <div class="copy">
         <div class="navegate">
             <b>Navegar</b>
