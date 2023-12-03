@@ -405,7 +405,7 @@ nav .background {
 
 @media screen and (min-width: 960px){
     .underline-indicator {
-        border-bottom: 4px solid black;
+        border-bottom: 2px solid black;
     }
 }
 
