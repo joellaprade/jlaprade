@@ -65,7 +65,7 @@ const arrowOptions = {
     threshold: 1
 }
 
-const arrowObserver = new IntersectionObserver((entries, observer) => {
+const arrowObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             arrowIcon.classList.remove('transparent')
@@ -75,7 +75,27 @@ const arrowObserver = new IntersectionObserver((entries, observer) => {
     })
 }, arrowOptions)
 
-arrowObserver.observe(benefit0)
+arrowObserver.observe(benefit0);
+
+
+
+const benefitsContainer = document.querySelector('.benefits')
+
+const containerOptions = {
+    threshold: 1
+}
+
+const containerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.style.overflow = "scroll";
+        }else {
+            entry.target.style.overflow = "hidden";
+        }
+    })
+}, containerOptions)
+
+containerObserver.observe(container);
 
 
 
