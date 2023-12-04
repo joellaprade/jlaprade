@@ -53,7 +53,6 @@ document.querySelector('nav').innerHTML +=
                 </div>
             </div>
         </div>
-
 `
 
 /*

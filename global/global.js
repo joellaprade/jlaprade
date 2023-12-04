@@ -3,6 +3,8 @@ const xButton = document.querySelector('.x');
 const menuWrapper = document.querySelector('.menu-wrapper');
 const contactDiv = document.querySelector('.contact');
 
+var isMobile = window.innerWidth < 960 ? true : false;
+
 const openMenu = () => {
     menuWrapper.style.translate = "-200px 0px";
 }
@@ -121,7 +123,7 @@ xButton.addEventListener('click', () => {
     clearInterval(colorChangeTimer);
 })
 
-hideColors();
+
 
 
 
@@ -165,3 +167,38 @@ for(let link of document.querySelectorAll('.contacto-link')){
         colorContact()
     })
 }
+
+
+
+const mobileTopColor = (page) => {
+    if(page == '/index.html' || page == '/'){
+        const hero = document.querySelector('.hero');
+        setIntersectionObserver(hero, 0.4);
+    }else {
+        const navBg = document.querySelector('svg.background')
+        setIntersectionObserver(navBg, 0);
+    }
+    
+
+}
+
+const setIntersectionObserver = (element, threshold) => {
+
+    const options = {
+        threshold: threshold
+    }
+
+    const intersectionObserver = new IntersectionObserver((entries) => {
+        if(entries[0].isIntersecting){
+            document.body.style.backgroundColor = "#181818";
+        }else {
+            document.body.style.backgroundColor = "#ffffff"
+        }
+    }, options)
+    
+    intersectionObserver.observe(element)
+}
+
+
+hideColors();
+if (isMobile) mobileTopColor(window.location.pathname);
