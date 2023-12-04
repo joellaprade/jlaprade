@@ -202,3 +202,4 @@ const setIntersectionObserver = (element, threshold) => {
 
 hideColors();
 if (isMobile) mobileTopColor(window.location.pathname);
+console.log(window.location.pathname)
