@@ -165,6 +165,10 @@ section .wrapper .arrow {
     cursor: pointer;
 }
 
+.scrollable > div {
+    cursor: pointer;
+}
+
 .rotate {
     transform: rotate(90deg) !important;
 }
