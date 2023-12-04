@@ -82,7 +82,7 @@ arrowObserver.observe(benefit0);
 const benefitsContainer = document.querySelector('.benefits')
 
 const containerOptions = {
-    threshold: 1
+    threshold: .75
 }
 
 const containerObserver = new IntersectionObserver((entries) => {
