@@ -5,6 +5,11 @@ const contactDiv = document.querySelector('.contact');
 
 var isMobile = window.innerWidth < 960 ? true : false;
 
+const writeToMobileConsole = (message) => {
+    var consoleMobile = document.querySelector('.console')
+    consoleMobile.innerHTML = message;
+}  
+
 const openMenu = () => {
     menuWrapper.style.translate = "-200px 0px";
 }
@@ -201,5 +206,8 @@ const setIntersectionObserver = (element, threshold) => {
 
 
 hideColors();
+
 if (isMobile) mobileTopColor(window.location.pathname);
-console.log(window.location.pathname)
+
+ 
+
