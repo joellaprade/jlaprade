@@ -104,8 +104,9 @@ nav > .wrapper {
 }
 
 .logo{
-    width: calc(145 * var(--shrink40));
+    width: calc(145 * var(--shrink20));
     object-fit: contain;
+    height: 100%;
 }
 
 
