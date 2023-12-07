@@ -10,11 +10,11 @@ const writeToMobileConsole = (message) => {
     consoleMobile.innerHTML = message;
 }  
 
-const openMenu = () => {
+const openMenu = async () => {
     menuWrapper.style.translate = "-200px 0px";
 }
 
-const hideMenu = () => {
+const hideMenu = async () => {
     menuWrapper.style.translate = "0px";
 }
 
@@ -54,7 +54,7 @@ const setIndicator = (index) => {
     mobileLinks[index + 1].classList.add('underline-indicator')
 }
 
-var tracker = {
+var menuTracker = {
     loop: 0,
     color: black,
     container: document.querySelector('.menu')
@@ -95,7 +95,7 @@ const hideColors = () => {
 
 
 const navColorChange = () => {
-    switch(tracker.loop){
+    switch(menuTracker.loop){
         case 0: 
             fadeToColor();
             break;
@@ -103,10 +103,10 @@ const navColorChange = () => {
             break;
         case 2: 
             fadeToBlack();
-            tracker.loop = -1;
+            menuTracker.loop = -1;
             break;
     }
-    tracker.loop++;
+    menuTracker.loop++;
 }
 
 var colorChangeTimer;

@@ -204,7 +204,7 @@ const showTopRow = async () => {
 
 
 
-const perpetualAnimation = async () => {
+const perpetualAnimation = async (stop) => {
     await hideBottomRow();
     await delayPromise(300);
     placeBottomRowTop();
@@ -219,6 +219,7 @@ const perpetualAnimation = async () => {
     await delayPromise(800);
 
     perpetualAnimation();
+    if (stop) return;
 }
 
 const fireAnimations = async () => {
@@ -232,6 +233,7 @@ const fireAnimations = async () => {
         perpetualAnimation();
     })
 }
+
 
 
 
