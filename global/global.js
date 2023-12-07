@@ -126,6 +126,7 @@ menuButton.addEventListener('click', () => {
 xButton.addEventListener('click', () => {
     hideMenu();
     clearInterval(colorChangeTimer);
+    menuTracker.loop = 0
 })
 
 
