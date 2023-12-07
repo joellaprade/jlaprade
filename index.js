@@ -1,3 +1,6 @@
+const delayPromise = delay => new Promise(resolve => {setTimeout(resolve, delay)})
+
+
 var container = document.querySelector('.container')
 var benefits = [].slice.call(container.children)
 var visibleArea;
@@ -120,4 +123,121 @@ for(let link of document.querySelectorAll('.contacto-link')){
     })
 }
 
+
+
+
+
+
+
+const lines = document.querySelector('.lines');
+var tracker = {
+    loop: 0,
+    linesOffset: 22.6,    
+
+    looped: () => {
+        tracker.loop++;
+        tracker.linesOffset += 22.6
+        if(tracker.loop == 5) tracker.reset();
+    },
+
+    reset: () => {
+        tracker.loop -= 5
+        tracker.linesOffset -= 22.6 * 5
+        lines.style.transition = 'none'
+        lines.style.translate = '0px 0px'
+        for(var line of lines.children){
+            line.style.translate = `0px 0px`
+        }
+    }
+}
+
+
+const openingAnimation = async () => {
+
+    for(i = 0; i < lines.childElementCount; i++){
+        let line = lines.children[i].children
+
+        for(let element of line) {
+            element.style.opacity = '1';
+            await delayPromise(40);
+        }
+    }
+}
+
+
+
+const phoneAnimation = () => {
+    document.querySelector('.phone-cover').style.opacity = 0;
+}
+
+
+
+const hideBottomRow = async () => {
+    let lastRow = lines.children[lines.childElementCount - 1 - tracker.loop];
+    for(let element of lastRow.children){
+        element.style.opacity = 0;
+        await delayPromise(100);
+    }
+}
+
+const placeBottomRowTop = () => {
+    let lastRow = lines.children[lines.childElementCount - 1 - tracker.loop];
+
+    lines.style.transition = 'translate 0.3s ease-in-out'
+
+    lastRow.style.translate = `0px -${ 22.6 * 5 }%`
+}
+
+const moveRows = () => {
+    lines.style.translate = `0px ${ tracker.linesOffset }%`
+}
+
+const showTopRow = async () => {
+    let firstRow = lines.children[lines.childElementCount - 1 - tracker.loop];
+    for(let element of firstRow.children){
+        element.style.opacity = 1;
+        await delayPromise(100);
+    }
+    await delayPromise(300);
+}
+
+
+
+
+const perpetualAnimation = async () => {
+    await hideBottomRow();
+    await delayPromise(300);
+    placeBottomRowTop();
+
+    moveRows();
+    await delayPromise(500);
+
+    showTopRow();
+    await delayPromise(300);
+
+    tracker.looped();
+    await delayPromise(800);
+
+    perpetualAnimation();
+}
+
+const fireAnimations = async () => {
+    let ilustration = document.querySelector('.pc-copy');
+    ilustration.addEventListener('load', async () => {
+        await delayPromise(700);
+        await openingAnimation();
+        await delayPromise(300);
+        phoneAnimation();
+        await delayPromise(500);
+        perpetualAnimation();
+    })
+}
+
+
+
+
+
+
+
 setIndicator(0);
+fireAnimations();

@@ -512,6 +512,17 @@ nav .background {
     bottom: 2.9%;
 }
 
+.phone-cover {
+    position: absolute;
+    aspect-ratio: 234/392;
+    width: 100%;
+    
+    left: 0%;
+    bottom: 2.9%;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
 .phone-copy {
     position: absolute;
     aspect-ratio: 166/211;
@@ -597,4 +608,18 @@ nav .background {
     40% {opacity: 0.9;}
     60% {opacity: 0.9;}
     100% {opacity: 0;}
+}
+
+
+
+
+
+.lines {
+    transition: translate 0.5s ease-in-out;
+}
+
+.lines > g > g {
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in-out;
 }
