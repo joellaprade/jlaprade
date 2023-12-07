@@ -10,11 +10,11 @@ const writeToMobileConsole = (message) => {
     consoleMobile.innerHTML = message;
 }  
 
-const openMenu = async () => {
+const openMenu = () => {
     menuWrapper.style.translate = "-200px 0px";
 }
 
-const hideMenu = async () => {
+const hideMenu =  () => {
     menuWrapper.style.translate = "0px";
 }
 
