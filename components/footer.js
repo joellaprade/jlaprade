@@ -26,4 +26,5 @@ document.querySelector('#footer').innerHTML +=
         </div>
     </div>
     <p class="secondary">Todos los derechos reservados JLaprade 2023</p>
+    <div class="console"></div>
 `

@@ -5,7 +5,7 @@ const contactDiv = document.querySelector('.contact');
 
 var isMobile = window.innerWidth < 960 ? true : false;
 
-const writeToMobileConsole = (message) => {
+const consoleLogMobile = (message) => {
     var consoleMobile = document.querySelector('.console')
     consoleMobile.innerHTML = message;
 }  
