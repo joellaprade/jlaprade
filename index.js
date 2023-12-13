@@ -156,7 +156,6 @@ const openingAnimation = async () => {
 
     for(i = 0; i < lines.childElementCount; i++){
         let line = lines.children[i].children
-        consoleLogMobile('ran mobile')
 
         for(let element of line) {
             element.style.opacity = '1';
