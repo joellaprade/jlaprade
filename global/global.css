@@ -291,6 +291,13 @@ footer .phone {
     transition: stroke 250ms ease-in-out;
 }
 
+footer .instagram {
+    stroke: #A4A4A4 2px;
+
+    fill: #A4A4A4;
+    transition: stroke 250ms ease-in-out, fill 250ms ease-in-out;
+}
+
 footer .mail {
     fill: #A4A4A4;
     transition: fill 250ms ease-in-out;
