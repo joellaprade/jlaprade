@@ -21,6 +21,7 @@ const hideMenu =  () => {
 const colorContact = () => {
     var isIndex = window.location.pathname == '/index.html' ? true : false;
     var phone = contactDiv.querySelector('.phone');
+    var instagram = contactDiv.querySelector('.instagram');
     var mail = contactDiv.querySelector('.mail');
     var delay1, delay2;
 
