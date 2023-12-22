@@ -21,7 +21,9 @@ const hideMenu =  () => {
 const colorContact = () => {
     var isIndex = window.location.pathname == '/index.html' ? true : false;
     var phone = contactDiv.querySelector('.phone');
-    var instagram = contactDiv.querySelector('.instagram');
+    var instagram1 = contactDiv.querySelector('.instagram1');
+    var instagram2 = contactDiv.querySelector('.instagram2');
+    var instagram3 = contactDiv.querySelector('.instagram3');
     var mail = contactDiv.querySelector('.mail');
     var delay1, delay2;
 
@@ -36,11 +38,17 @@ const colorContact = () => {
 
     setTimeout(() => {
         phone.style.stroke = "#FFFFFF";
+        instagram1.style.fill = "#FFFFFF";
+        instagram2.style.fill = "#FFFFFF";
+        instagram3.style.fill = "#FFFFFF";
         mail.style.fill = '#FFFFFF';
     }, delay1)
 
     setTimeout(() => {
         phone.style.stroke = '#A4A4A4';
+        instagram1.style.fill = "#A4A4A4";
+        instagram2.style.fill = "#A4A4A4";
+        instagram3.style.fill = "#A4A4A4";        
         mail.style.fill = '#A4A4A4';
     }, delay2)
 }
