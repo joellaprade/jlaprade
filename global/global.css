@@ -17,6 +17,13 @@
     scroll-behavior: smooth;
 }
 
+font {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    
+}
+
 * {
     margin: 0px;
 
