@@ -226,9 +226,9 @@ var data;
 const baseURL = 'https://jlaprade.com/';
 
 const getResponse = async () => {
-    const res = await fetch(baseURL, {
+    const res = await fetch(baseURL + 'test', {
         method: 'GET'
-    })
+    });
     data = await res.json();
     console.log(data)
 }
