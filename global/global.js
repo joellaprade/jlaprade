@@ -218,3 +218,20 @@ const setIntersectionObserver = (element, threshold) => {
 hideColors();
 
 if (isMobile) mobileTopColor(window.location.pathname);
+
+ 
+
+
+var data;
+const baseURL = 'https://jlaprade.com/';
+
+const getResponse = async () => {
+    const res = await fetch(baseURL + 'test',
+    {
+        method: 'GET'
+    })
+    data = await res.json();
+    console.log(data.message)
+}
+
+setTimeout(getResponse, 500)
