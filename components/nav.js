@@ -37,7 +37,7 @@ document.querySelector('nav').innerHTML +=
                 </div>
 
                 <a href="/index.html">Inicio</a>
-                <a href="/products/products.html">Productos</a>
+                <a href="productos">Productos</a>
                 <a href="/proyects/proyects.html">Proyectos</a>
                 <a class="contacto-link" href="#footer">Contacto</a>
                 <a target="_blank" href="https://wa.me/50687083439">
