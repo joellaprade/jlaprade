@@ -232,3 +232,5 @@ const getResponse = async () => {
     data = await res.json();
     console.log(data)
 }
+
+getResponse();
