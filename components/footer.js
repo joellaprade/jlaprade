@@ -6,9 +6,9 @@ document.querySelector('#footer').innerHTML +=
     <div class="copy">
         <div class="navegate">
             <b>Navegar</b>
-            <a class="secondary hover-float" href="/index.html">Inicio</a>
-            <a class="secondary hover-float" href="/products/products.html">Productos</a>
-            <a class="secondary hover-float" href="/proyects/proyects.html">Proyectos</a>
+            <a class="secondary hover-float" href="/">Inicio</a>
+            <a class="secondary hover-float" href="/productos">Productos</a>
+            <a class="secondary hover-float" href="/proyectos">Proyectos</a>
             <a class="secondary hover-float" target="_blank" href="https://wa.me/50687083439">Cotizar</a>
         </div>
         <div class="contact">

@@ -4,7 +4,7 @@ document.querySelector('nav').innerHTML +=
   <path d="M746 0H0V306.792C204.995 255.49 431.745 227 670.234 227C695.626 227 720.886 227.323 746 227.962V0Z" fill="#181818"/>
 </svg>
 <div class="wrapper">
-    <a href="/index.html">
+    <a href="/">
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 24" fill="none">
             <path d="M13.528 0.76001V16.792C13.528 18.776 12.92 20.344 11.704 21.496C10.5093 22.648 8.93063 23.224 6.96796 23.224C5.00529 23.224 3.41596 22.648 2.19996 21.496C1.00529 20.344 0.407959 18.776 0.407959 16.792H4.08796C4.10929 17.7733 4.35463 18.552 4.82396 19.128C5.31463 19.704 6.02929 19.992 6.96796 19.992C7.90663 19.992 8.62129 19.704 9.11196 19.128C9.60263 18.5307 9.84796 17.752 9.84796 16.792V0.76001H13.528Z" fill="white"/>
             <path d="M21.1265 21.784H29.4785V23H19.6865V0.536011H21.1265V21.784Z" fill="white"/>
@@ -17,9 +17,9 @@ document.querySelector('nav').innerHTML +=
         </svg>
     </a>
     <div class="link-container">
-        <a href="/index.html" class="link hover-float">Inicio</a>
-        <a href="/products/products.html" class="link hover-float">Productos</a>
-        <a href="/proyects/proyects.html" class="link hover-float">Proyectos</a>
+        <a href="/" class="link hover-float">Inicio</a>
+        <a href="/productos/" class="link hover-float">Productos</a>
+        <a href="/proyectos" class="link hover-float">Proyectos</a>
         <a href="#footer" class="link contacto-link hover-float">Contacto</a>
         <a target="_blank" href="https://wa.me/50687083439">
             <button>Cotizar</button>
@@ -36,9 +36,9 @@ document.querySelector('nav').innerHTML +=
                     <img class="x" src="/assets/x.png" alt="">
                 </div>
 
-                <a href="/index.html">Inicio</a>
-                <a href="productos">Productos</a>
-                <a href="/proyects/proyects.html">Proyectos</a>
+                <a href="/">Inicio</a>
+                <a href="/productos">Productos</a>
+                <a href="/proyectos">Proyectos</a>
                 <a class="contacto-link" href="#footer">Contacto</a>
                 <a target="_blank" href="https://wa.me/50687083439">
                     <button>
@@ -54,11 +54,3 @@ document.querySelector('nav').innerHTML +=
             </div>
         </div>
 `
-
-/*
-
-
-
-
-
-*/ 
