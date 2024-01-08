@@ -226,11 +226,12 @@ var data;
 const baseURL = 'https://jlaprade.com/';
 
 const getResponse = async () => {
-    const res = await fetch(baseURL + 'test', {
+    const res = await fetch(baseURL + 'test',
+    {
         method: 'GET'
-    });
+    })
     data = await res.json();
     console.log(data.message)
 }
 
-getResponse();
+setTimeout(getResponse, 500)
