@@ -230,7 +230,7 @@ const getResponse = async () => {
         method: 'GET'
     });
     data = await res.json();
-    console.log(data)
+    console.log(data.message)
 }
 
 getResponse();
