@@ -18,7 +18,7 @@ document.querySelector('nav').innerHTML +=
     </a>
     <div class="link-container">
         <a href="/" class="link hover-float">Inicio</a>
-        <a href="/productos/" class="link hover-float">Productos</a>
+        <a href="/productos" class="link hover-float">Productos</a>
         <a href="/proyectos" class="link hover-float">Proyectos</a>
         <a href="#footer" class="link contacto-link hover-float">Contacto</a>
         <a target="_blank" href="https://wa.me/50687083439">
